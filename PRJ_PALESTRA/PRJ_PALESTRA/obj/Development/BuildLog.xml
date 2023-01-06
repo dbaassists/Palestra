@@ -2,13 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>PRJ_PALESTRA</Name>
-    <LastWriteTime>2023-01-05T21:19:25.5015748Z</LastWriteTime>
+    <LastWriteTime>2023-01-06T17:28:27.5234376Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>PKG_CARGA_01.dtsx</Name>
-      <LastWriteTime>2023-01-05T21:30:07.6795476Z</LastWriteTime>
+      <LastWriteTime>2023-01-06T03:00:21.2055782Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>PKG_CARGA_02_COM_LKP.dtsx</Name>
+      <LastWriteTime>2023-01-06T17:28:27.5024935Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
