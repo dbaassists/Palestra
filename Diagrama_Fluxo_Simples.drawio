@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2023-01-12T01:13:12.208Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="_F9QDCa-gTxpINjMGBMp" version="20.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-12T01:15:02.983Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="MXitYkA2dKPz9LFOlZV_" version="20.8.3" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
-    <mxGraphModel dx="793" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="793" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="iyPb0N3byPzZvULkwc2K-101" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="300" y="135" width="350" height="350" as="geometry" />
+          <mxGeometry x="340" y="175" width="310" height="310" as="geometry" />
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-96" value="" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=none;sketch=1;curveFitting=1;jiggle=2;fillColor=#FFB366;strokeWidth=4;opacity=70;shadow=0;glass=0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="158" width="120" height="60" as="geometry" />
+          <mxGeometry x="435" y="227" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-97" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;glass=0;fillColor=#66FFB3;strokeWidth=4;" vertex="1" parent="1">
-          <mxGeometry x="370" y="388" width="120" height="60" as="geometry" />
+          <mxGeometry x="435" y="395" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-98" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iyPb0N3byPzZvULkwc2K-96" target="iyPb0N3byPzZvULkwc2K-97">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -20,19 +20,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-99" value="Arquivo Candidato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="500" y="173" width="120" height="30" as="geometry" />
+          <mxGeometry x="435" y="197" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-100" value="Tabela Candidato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="500" y="403" width="120" height="30" as="geometry" />
+          <mxGeometry x="435" y="455" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.47;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iyPb0N3byPzZvULkwc2K-102" target="iyPb0N3byPzZvULkwc2K-101">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-102" value="" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=none;sketch=1;curveFitting=1;jiggle=2;fillColor=#FFB366;strokeWidth=4;opacity=70;shadow=0;glass=0;" vertex="1" parent="1">
-          <mxGeometry x="404" y="20" width="120" height="60" as="geometry" />
+          <mxGeometry x="426" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="iyPb0N3byPzZvULkwc2K-106" value="Limpa Tabela Candidato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="90" width="150" height="30" as="geometry" />
+          <mxGeometry x="490" y="100" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
