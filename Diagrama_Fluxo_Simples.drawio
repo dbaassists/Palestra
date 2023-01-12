@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-12T01:47:19.204Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="NHn8WTFbC4tFwhhPIu_B" version="20.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-12T01:48:58.995Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="9o3GyfNsZgFQv9WNt6ZJ" version="20.8.3" type="github">
   <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
     <mxGraphModel dx="796" dy="496" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
@@ -40,8 +40,8 @@
         <mxCell id="iyPb0N3byPzZvULkwc2K-109" value="FLUXO SIMPLES DE CARGA 01" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=default;strokeWidth=2;fontSize=17;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="275" y="40" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iyPb0N3byPzZvULkwc2K-111" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png;rounded=0;fillWeight=4;hachureGap=8;hachureAngle=45;jiggle=1;curveFitting=0.95;strokeColor=#666666;strokeWidth=2;fontSize=17;fillColor=default;" vertex="1" parent="1">
-          <mxGeometry x="170" y="57" width="50" height="60" as="geometry" />
+        <mxCell id="iyPb0N3byPzZvULkwc2K-112" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png;rounded=1;fillWeight=4;hachureGap=8;hachureAngle=45;strokeColor=#666666;strokeWidth=4;fillColor=#66FFB3;opacity=70;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="170" y="50" width="60" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
