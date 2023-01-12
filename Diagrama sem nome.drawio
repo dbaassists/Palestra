@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-12T01:48:47.524Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="0LypBUvq_z2pjr_6dXHv" version="20.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-12T01:51:00.230Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="p93PChKIR7IzyS5kOn1f" version="20.8.3" type="github">
   <diagram name="Page-1" id="edf60f1a-56cd-e834-aa8a-f176f3a09ee4">
     <mxGraphModel dx="967" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -63,8 +63,8 @@
         <mxCell id="fyPfAZJ4lxC-gPcLh0bJ-65" value="Limpa Tabela Candidato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="408" y="153" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fyPfAZJ4lxC-gPcLh0bJ-68" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png;rounded=1;fillWeight=4;hachureGap=8;hachureAngle=45;strokeColor=#666666;strokeWidth=4;fillColor=#66FFB3;opacity=70;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="130" y="40" width="60" height="60" as="geometry" />
+        <mxCell id="fyPfAZJ4lxC-gPcLh0bJ-68" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png;rounded=1;fillWeight=4;hachureGap=8;hachureAngle=45;strokeColor=#666666;strokeWidth=4;fillColor=#66FFB3;opacity=70;sketch=1;curveFitting=1;jiggle=2;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="140" y="50" width="60" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
