@@ -1,0 +1,16 @@
+{
+	"Config":
+	{
+	"server": "SQLWEEKRECIFE\\SQL2019",
+	"database": "LOGPROCESSAMENTO",
+	"username": "usr_relatorio",
+	"password": "SqLWR2023!",
+	"fromaddr": "dbaassists@gmail.com",
+	"toaddr": "dbaassists@gmail.com",
+	"chave":"vbhtcacasywvalzs",
+	"subject":"Log de Processamento",
+	"filename": "log_processamento.csv",
+	"file":"Y:\\Notebook\\CSV\\log_processamento.csv",
+	"image":"Y:\\Notebook\\Imagem\\logo-removebg-preview.png"
+	}
+}
