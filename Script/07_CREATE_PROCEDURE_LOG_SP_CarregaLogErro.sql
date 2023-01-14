@@ -11,7 +11,7 @@ IF EXISTS (SELECT 1 FROM SYS.procedures WHERE NAME = 'SP_CarregaLogErro')
 DROP PROCEDURE [dbo].[SP_CarregaLogErro]
 GO
 
-CREATE PROCEDURE [dbo].[SP_CarregaLogErro]
+CREATE PROCEDURE  [dbo].[SP_CarregaLogErro]
 	@IdPacote varchar(50)
 	,@IdTarefa varchar(50)
 	,@NomeTarefa varchar(60)
@@ -35,17 +35,17 @@ begin
 	
 	
 	select @IdCarga = MAX(IdCarga)
-	from SCH_LOG.TB_Carga cg
+	from dbo.TB_Carga cg
 	where cg.IdPacote = @IdPacote_c
 	
 	select 
 		@IdCargaDetalhe = MAX(CD1.IdCargaDetalhe)
-	from [SCH_LOG].[TB_CargaDetalhe] CD1
+	from [dbo].[TB_CargaDetalhe] CD1
 	where CD1.IdTarefa = @IdTarefa_c
 	and CD1.IdCarga = @IdCarga
 		
 	--Insere o erro na tabela de log de erros
-	INSERT INTO [SGBLOG].[SCH_LOG].[TB_CargaErro]
+	INSERT INTO [dbo].[TB_CargaErro]
            ([IdCargaDetalhe]
            ,[NomTarefa]
            ,[NumErro]
@@ -64,14 +64,14 @@ begin
     update a set 
 		a.TpoExecucao = 'E'
 		,a.DthFim = @DataHoraErro
-	from SCH_LOG.TB_CargaDetalhe a
+	from dbo.TB_CargaDetalhe a
 	where a.IdCargaDetalhe = @IdCargaDetalhe     
                
     --Atualiza a situação da etapa que ocorreu o erro para "E" na tabela de carga detalhe
     update a set 
 		a.TpoExecucao = 'E'
 		,a.DthFim = @DataHoraErro
-	from SCH_LOG.TB_Carga a
+	from dbo.TB_Carga a
 	where a.IdCarga = @IdCarga
 
 end
