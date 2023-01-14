@@ -1,0 +1,2726 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/9/2023 2:57:42 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SQLWEEKRECIFE"
+  DTS:CreatorName="SQLWEEKRECIFE\Administrator"
+  DTS:DTSID="{370F05F9-7750-480A-A787-107161D53434}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="PKG_Importacao-Dados_Cargo"
+  DTS:PackageType="5"
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{F63E15B3-A9D3-4C2A-8AE5-12612FFA915E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CONN_FF_SRC-ARQ_CANDIDATO]"
+      DTS:CreationName="FLATFILE"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{46BF021B-4594-48D9-BD02-52041E77D266}"
+      DTS:ObjectName="CONN_FF_SRC-ARQ_CANDIDATO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="Y:\Dados\Source\consulta_cand_2022_BRASIL.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DT_GERACAO"
+              DTS:DTSID="{605210F3-B852-4646-B231-04C4F869A705}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HH_GERACAO"
+              DTS:DTSID="{F834140D-F7B7-4238-8172-25120DDB4DD3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ANO_ELEICAO"
+              DTS:DTSID="{CFD282C8-5A29-4B9A-8F00-6077A51A65D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_TIPO_ELEICAO"
+              DTS:DTSID="{06005175-517A-4ED1-9464-BA2DEDE6F552}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_TIPO_ELEICAO"
+              DTS:DTSID="{9648E4F5-F41C-4686-9C42-445B93970B2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_TURNO"
+              DTS:DTSID="{06B8BE06-8555-4195-AF6E-F35ADEB8D478}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_ELEICAO"
+              DTS:DTSID="{D448AE53-EF10-4455-A9B5-42F80E48A599}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_ELEICAO"
+              DTS:DTSID="{168B06F8-4072-4308-B70A-9B609845DE65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DT_ELEICAO"
+              DTS:DTSID="{FBB412BE-BB80-4737-AF38-FF95E7BD26F0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_ABRANGENCIA"
+              DTS:DTSID="{2539B9DD-F5B5-4214-A65A-2C8BCFCDBD70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SG_UF"
+              DTS:DTSID="{BCAC5470-1E05-4D06-B8D6-7611FD770EF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SG_UE"
+              DTS:DTSID="{E70220C9-0941-4EE4-8E80-81A86132A94F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_UE"
+              DTS:DTSID="{B5DD0CAA-9F10-4609-BC99-780E8A9AE2EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_CARGO"
+              DTS:DTSID="{85FE60F4-910C-4335-BDD0-A69DC41001AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_CARGO"
+              DTS:DTSID="{DD00912B-80D6-48A2-B74B-75CE9BBB2332}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SQ_CANDIDATO"
+              DTS:DTSID="{0B6FC7BC-34B9-4A00-BE88-83DB0345B022}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_CANDIDATO"
+              DTS:DTSID="{8A613AF7-CB40-4817-961F-937CE368A430}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_CANDIDATO"
+              DTS:DTSID="{E1143EA3-1B58-4A16-8CBA-D719067F3D52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_URNA_CANDIDATO"
+              DTS:DTSID="{5E2B8AF7-C250-4238-B570-984971145AF4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_SOCIAL_CANDIDATO"
+              DTS:DTSID="{7C53951F-56F3-4ADD-AB3D-4E06ECAAE8B6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_CPF_CANDIDATO"
+              DTS:DTSID="{F0FF8C6A-AACF-4DA5-8F5A-762308047F0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_EMAIL"
+              DTS:DTSID="{6298F536-C43A-4481-BED4-9D691CE9CF7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_SITUACAO_CANDIDATURA"
+              DTS:DTSID="{1562D7B3-E2CD-4205-AFC9-1F3AC55F6630}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_SITUACAO_CANDIDATURA"
+              DTS:DTSID="{96842348-CD7C-43EF-9541-D3E9BACD9702}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_DETALHE_SITUACAO_CAND"
+              DTS:DTSID="{B887219E-23BF-4CA6-80EE-38772CBA367D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_DETALHE_SITUACAO_CAND"
+              DTS:DTSID="{0448E7AA-78AE-49F4-876F-5D5E4D10836C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TP_AGREMIACAO"
+              DTS:DTSID="{67CD4827-1804-4C16-A308-EA1A51FB3B66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_PARTIDO"
+              DTS:DTSID="{047FCF9B-203C-4223-8912-A9313990BFA8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SG_PARTIDO"
+              DTS:DTSID="{9F826EC4-CC57-44D9-800C-2FB15581A3B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_PARTIDO"
+              DTS:DTSID="{7F942288-010D-422A-AF50-3D9A4CD3BDDB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_FEDERACAO"
+              DTS:DTSID="{97D25E94-642B-4BCA-B400-396F3E940A9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_FEDERACAO"
+              DTS:DTSID="{3B834B61-DA9A-421A-B2BE-B5C464AA39DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SG_FEDERACAO"
+              DTS:DTSID="{6A44DC17-5B79-47A9-BD99-672CBF34BF29}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_COMPOSICAO_FEDERACAO"
+              DTS:DTSID="{1FF9D8D4-E470-4543-9713-276BD1361A90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SQ_COLIGACAO"
+              DTS:DTSID="{3A5DB29B-B3EE-4789-B97A-109D7ACEC2BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_COLIGACAO"
+              DTS:DTSID="{096429A3-29E1-45AA-8608-DA9805B94ED6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_COMPOSICAO_COLIGACAO"
+              DTS:DTSID="{CBA5327D-298B-4231-A251-7B30C75885E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_NACIONALIDADE"
+              DTS:DTSID="{A4AE912C-73FA-498C-BA31-FC3F65BE826B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_NACIONALIDADE"
+              DTS:DTSID="{9C299D3D-61EA-4A0B-BE4E-510707CEEE95}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SG_UF_NASCIMENTO"
+              DTS:DTSID="{9FE244C2-710D-434D-BA21-ED2460613884}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_MUNICIPIO_NASCIMENTO"
+              DTS:DTSID="{18BD0304-6D53-464E-8466-FD1F1FDD59E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_MUNICIPIO_NASCIMENTO"
+              DTS:DTSID="{B1884B47-8DF9-4A28-A77A-BB8972A1F36E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DT_NASCIMENTO"
+              DTS:DTSID="{7E722A48-84BB-4FA3-B055-049FD8880792}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_IDADE_DATA_POSSE"
+              DTS:DTSID="{0E7EA8A2-2D0A-41C8-ABF9-A1235F8670BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_TITULO_ELEITORAL_CANDIDATO"
+              DTS:DTSID="{28812826-F2E9-44C4-82E4-0CC40A14D20F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_GENERO"
+              DTS:DTSID="{3F8E4909-B0C7-4CA6-B070-23AE6E61D960}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_GENERO"
+              DTS:DTSID="{2DE2C9ED-A658-4C4C-8BC5-6BD231D408BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_GRAU_INSTRUCAO"
+              DTS:DTSID="{73B57CDE-6C5B-408A-A504-98755974A87C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_GRAU_INSTRUCAO"
+              DTS:DTSID="{ACCD1FFF-CA10-4395-939F-09C3377DC7DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_ESTADO_CIVIL"
+              DTS:DTSID="{02417E0E-8605-479E-9589-B526BD4D681C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_ESTADO_CIVIL"
+              DTS:DTSID="{85E5BB19-C528-43D9-8773-D64B3F929AD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_COR_RACA"
+              DTS:DTSID="{CFD46632-B3F5-47D6-ADF7-7864ACEC182A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_COR_RACA"
+              DTS:DTSID="{472BE975-7695-406C-914F-8E6344233A77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_OCUPACAO"
+              DTS:DTSID="{5E7DE6D1-ED8B-487C-90EA-D61EC437ACC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_OCUPACAO"
+              DTS:DTSID="{9994FC5F-ACA5-49EC-A4F0-9D4F27A72454}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VR_DESPESA_MAX_CAMPANHA"
+              DTS:DTSID="{EF45D8B3-4539-476C-808D-CB9A19C3F0D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_SIT_TOT_TURNO"
+              DTS:DTSID="{F5937E78-731E-4CBD-9252-44E0FF36F06D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_SIT_TOT_TURNO"
+              DTS:DTSID="{244B96CD-A867-4BF8-9BE9-0C0E7B3CB9D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ST_REELEICAO"
+              DTS:DTSID="{07FEBC50-D8A0-4DAB-8B26-F638141A147B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ST_DECLARAR_BENS"
+              DTS:DTSID="{BD092E26-E5F3-49B9-B463-E8B9CCA242F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_PROTOCOLO_CANDIDATURA"
+              DTS:DTSID="{087ADF02-C3B7-48E3-9E20-220FD3B8F969}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NR_PROCESSO"
+              DTS:DTSID="{B459B8B6-E48D-445B-ACA1-F905F6E0C629}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_SITUACAO_CANDIDATO_PLEITO"
+              DTS:DTSID="{C08B9A4E-E12F-42DB-AF2C-4582A5C9B259}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_SITUACAO_CANDIDATO_PLEITO"
+              DTS:DTSID="{D942A298-3757-495A-9782-799005310E4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_SITUACAO_CANDIDATO_URNA"
+              DTS:DTSID="{C9EF6F8C-D659-4A50-970F-532ECA52DC08}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_SITUACAO_CANDIDATO_URNA"
+              DTS:DTSID="{7C30B8D4-8772-49F7-9C08-D97CF335A030}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ST_CANDIDATO_INSERIDO_URNA"
+              DTS:DTSID="{4841801F-BBEC-4D63-A2FE-B65D2231AAE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NM_TIPO_DESTINACAO_VOTOS"
+              DTS:DTSID="{987A92B4-A50F-42CE-B7C7-09C10BD63BBC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CD_SITUACAO_CANDIDATO_TOT"
+              DTS:DTSID="{BE9ABB3B-0581-49CE-9C02-770422FE0BF1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DS_SITUACAO_CANDIDATO_TOT"
+              DTS:DTSID="{80A46E69-FFB8-4CBC-9A43-087871460495}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ST_PREST_CONTAS"
+              DTS:DTSID="{40ACB6D9-ACBC-409E-84C2-B0373CA9CA48}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CONN_OLE_DB-LOGPROCESSAMENTO]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E0519EB6-D79E-4777-B5C8-C90BD495C9E1}"
+      DTS:ObjectName="CONN_OLE_DB-LOGPROCESSAMENTO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SQLWEEKRECIFE\SQL2019;Initial Catalog=LOGPROCESSAMENTO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CONN_OLE_DST-TB_CANDIDATO]"
+      DTS:CreationName="OLEDB"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{5E30E341-3227-4952-9CEC-208F53F24C12}"
+      DTS:ObjectName="CONN_OLE_DST-TB_CANDIDATO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SQLWEEKRECIFE\SQL2019;Initial Catalog=SQLWEEKRECIFE;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CONN_OLE_DST-tempdb]"
+      DTS:CreationName="OLEDB"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{8c9c15b6-6bd9-46fd-9056-54b3e1d6e31e}"
+      DTS:ObjectName="CONN_OLE_DST-tempdb">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Retain="True"
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=SQLWEEKRECIFE\SQL2019;Initial Catalog=tempdb;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-PKG_Importacao-Dados_Candidato-{8c9c15b6-6bd9-46fd-9056-54b3e1d6e31e}CONN_OLE_DST-tempdb;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5A10FDF6-BC24-45D4-8B18-799FF47DBA16}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Grupo">
+      <DTS:VariableValue
+        DTS:DataType="8">STG</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{59235E61-B7DB-484C-A317-7AF8E90B393B}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="QtdLinhasAtualizadas">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A97CB9A4-0C81-4D76-B359-DF8866750CCD}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="QtdLinhasInseridas">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\SEQC - Carga TB_CARGO"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:DelayValidation="True"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{24147235-26F8-4B8B-9DF1-F10716163398}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SEQC - Carga TB_CARGO">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:DelayValidation="True"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{96D7751F-9992-40B9-8495-F48594EA51EC}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT - Carga TB_CARGO"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:EventHandlers>
+            <DTS:EventHandler
+              DTS:refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.EventHandlers[OnPostExecute]"
+              DTS:CreationName="OnPostExecute"
+              DTS:DTSID="{BD872260-2384-4180-AC3E-8915C4DB80AA}"
+              DTS:EventID="-1073741823"
+              DTS:EventName="OnPostExecute"
+              DTS:LocaleID="-1">
+              <DTS:Variables>
+                <DTS:Variable
+                  DTS:CreationName=""
+                  DTS:Description="The propagate property of the event"
+                  DTS:DTSID="{67F65F9C-C45E-499E-AD8D-41F1A45BE5C6}"
+                  DTS:IncludeInDebugDump="6789"
+                  DTS:Namespace="System"
+                  DTS:ObjectName="Propagate">
+                  <DTS:VariableValue
+                    DTS:DataType="11">-1</DTS:VariableValue>
+                </DTS:Variable>
+              </DTS:Variables>
+              <DTS:Executables>
+                <DTS:Executable
+                  DTS:refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.EventHandlers[OnPostExecute]\ESQL - Registra Log"
+                  DTS:CreationName="Microsoft.ExecuteSQLTask"
+                  DTS:Description="Execute SQL Task"
+                  DTS:DTSID="{9184e7fc-f604-45bb-b4de-ab12fa6cda45}"
+                  DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+                  DTS:LocaleID="-1"
+                  DTS:ObjectName="ESQL - Registra Log"
+                  DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+                  <DTS:Variables />
+                  <DTS:ObjectData>
+                    <SQLTask:SqlTaskData
+                      SQLTask:Connection="{E0519EB6-D79E-4777-B5C8-C90BD495C9E1}"
+                      SQLTask:SqlStatementSource="EXECUTE [dbo].[SP_CarregaLog]&#xA;   ?&#xA;  ,?&#xA;  ,?&#xA;  ,?&#xA;  ,?&#xA;  ,?&#xA;  ,?&#xA;  ,?&#xA;  ,'F'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="0"
+                        SQLTask:DtsVariableName="User::Grupo"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="129"
+                        SQLTask:ParameterSize="-1" />
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="1"
+                        SQLTask:DtsVariableName="System::PackageID"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="129"
+                        SQLTask:ParameterSize="-1" />
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="2"
+                        SQLTask:DtsVariableName="System::PackageName"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="129"
+                        SQLTask:ParameterSize="-1" />
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="3"
+                        SQLTask:DtsVariableName="System::SourceID"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="129"
+                        SQLTask:ParameterSize="-1" />
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="4"
+                        SQLTask:DtsVariableName="System::SourceName"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="129"
+                        SQLTask:ParameterSize="-1" />
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="5"
+                        SQLTask:DtsVariableName="System::SourceDescription"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="129"
+                        SQLTask:ParameterSize="-1" />
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="6"
+                        SQLTask:DtsVariableName="User::QtdLinhasInseridas"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="3"
+                        SQLTask:ParameterSize="-1" />
+                      <SQLTask:ParameterBinding
+                        SQLTask:ParameterName="7"
+                        SQLTask:DtsVariableName="User::QtdLinhasAtualizadas"
+                        SQLTask:ParameterDirection="Input"
+                        SQLTask:DataType="3"
+                        SQLTask:ParameterSize="-1" />
+                    </SQLTask:SqlTaskData>
+                  </DTS:ObjectData>
+                </DTS:Executable>
+              </DTS:Executables>
+            </DTS:EventHandler>
+          </DTS:EventHandlers>
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores"
+                  componentClassID="Microsoft.Aggregate"
+                  contactInfo="Aggregate;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+                  description="Aggregates data with functions such as Average, Sum, Count, Max, and Min. For example, group data to compute the sum of sales per product or the average visits per day."
+                  name="AGR_TRFM - Agrupa Valores"
+                  version="3">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                      name="KeyScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                      name="Keys" />
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the approximate number of distinct values in a column that the aggregation counts distinctly. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no CountDistinctScale value is used."
+                      name="CountDistinctScale"
+                      typeConverter="KeyScaleType">0</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the exact number of distinct values in a column that the aggregation counts distinctly. If a CountDistinctScale value is specified, the value in CountDistinctKeys takes precedence."
+                      name="CountDistinctKeys" />
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the percentage by which memory can be extended during the aggregation. Valid values are between 1 and 100."
+                      name="AutoExtendFactor">25</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Inputs[Aggregate Input 1]"
+                      name="Aggregate Input 1">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Inputs[Aggregate Input 1].Columns[CD_CARGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CD_CARGO"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[CD_CARGO]" />
+                        <inputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Inputs[Aggregate Input 1].Columns[DS_CARGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DS_CARGO"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[DS_CARGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1]"
+                      name="Aggregate Output 1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the approximate number of group by keys that the aggregation produces. Low indicates 500,000 key values, Medium indicates 5 million key values, and High indicates more than 25 million key values. Unspecified indicates no KeyScale value is used."
+                          name="KeyScale"
+                          typeConverter="KeyScaleType">0</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the exact number of group by keys that the aggregation produces. If a KeyScale value is specified, the value in Keys takes precedence."
+                          name="Keys" />
+                      </properties>
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[CD_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[CD_CARGO]"
+                          name="CD_CARGO">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the ID of the input column used in the aggregation."
+                              name="AggregationColumnId">#{Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[CD_CARGO]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the type of aggregation."
+                              name="AggregationType"
+                              typeConverter="AggregationType">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                              name="IsBig">1</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the string comparison options."
+                              name="AggregationComparisonFlags">0</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[DS_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[DS_CARGO]"
+                          name="DS_CARGO">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the ID of the input column used in the aggregation."
+                              name="AggregationColumnId">#{Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[DS_CARGO]}</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the type of aggregation."
+                              name="AggregationType"
+                              typeConverter="AggregationType">0</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Indicates whether the column requires special handling because it may contain oversized data or it requires precision beyond a float data type."
+                              name="IsBig">1</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the string comparison options."
+                              name="AggregationComparisonFlags">0</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="FF_SRC-ARQ_CANDIDATO"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[CONN_FF_SRC-ARQ_CANDIDATO]"
+                      connectionManagerRefId="Package.ConnectionManagers[CONN_FF_SRC-ARQ_CANDIDATO]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[CD_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_CARGO]"
+                          length="50"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[CD_CARGO]"
+                          name="CD_CARGO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[DS_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_CARGO]"
+                          length="50"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].Columns[DS_CARGO]"
+                          name="DS_CARGO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DT_GERACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DT_GERACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[HH_GERACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="HH_GERACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[ANO_ELEICAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ANO_ELEICAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_TIPO_ELEICAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_TIPO_ELEICAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_TIPO_ELEICAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_TIPO_ELEICAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_TURNO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_TURNO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_ELEICAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_ELEICAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_ELEICAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_ELEICAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DT_ELEICAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DT_ELEICAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[TP_ABRANGENCIA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TP_ABRANGENCIA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[SG_UF]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SG_UF" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[SG_UE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SG_UE" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_UE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_UE" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_CARGO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_CARGO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[SQ_CANDIDATO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SQ_CANDIDATO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_CANDIDATO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_CANDIDATO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_CANDIDATO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_CANDIDATO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_URNA_CANDIDATO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_URNA_CANDIDATO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_SOCIAL_CANDIDATO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_SOCIAL_CANDIDATO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_CPF_CANDIDATO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_CPF_CANDIDATO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_EMAIL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_EMAIL" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_SITUACAO_CANDIDATURA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_SITUACAO_CANDIDATURA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_SITUACAO_CANDIDATURA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_SITUACAO_CANDIDATURA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_DETALHE_SITUACAO_CAND]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_DETALHE_SITUACAO_CAND" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_DETALHE_SITUACAO_CAND]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_DETALHE_SITUACAO_CAND" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[TP_AGREMIACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TP_AGREMIACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_PARTIDO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_PARTIDO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[SG_PARTIDO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SG_PARTIDO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_PARTIDO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_PARTIDO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_FEDERACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_FEDERACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_FEDERACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_FEDERACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[SG_FEDERACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SG_FEDERACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_COMPOSICAO_FEDERACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_COMPOSICAO_FEDERACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[SQ_COLIGACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SQ_COLIGACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_COLIGACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_COLIGACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_COMPOSICAO_COLIGACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_COMPOSICAO_COLIGACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_NACIONALIDADE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_NACIONALIDADE" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_NACIONALIDADE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_NACIONALIDADE" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[SG_UF_NASCIMENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SG_UF_NASCIMENTO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_MUNICIPIO_NASCIMENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_MUNICIPIO_NASCIMENTO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_MUNICIPIO_NASCIMENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_MUNICIPIO_NASCIMENTO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DT_NASCIMENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DT_NASCIMENTO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_IDADE_DATA_POSSE]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_IDADE_DATA_POSSE" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_TITULO_ELEITORAL_CANDIDATO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_TITULO_ELEITORAL_CANDIDATO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_GENERO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_GENERO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_GENERO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_GENERO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_GRAU_INSTRUCAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_GRAU_INSTRUCAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_GRAU_INSTRUCAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_GRAU_INSTRUCAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_ESTADO_CIVIL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_ESTADO_CIVIL" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_ESTADO_CIVIL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_ESTADO_CIVIL" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_COR_RACA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_COR_RACA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_COR_RACA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_COR_RACA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_OCUPACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_OCUPACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_OCUPACAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_OCUPACAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[VR_DESPESA_MAX_CAMPANHA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="VR_DESPESA_MAX_CAMPANHA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_SIT_TOT_TURNO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_SIT_TOT_TURNO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_SIT_TOT_TURNO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_SIT_TOT_TURNO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[ST_REELEICAO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ST_REELEICAO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[ST_DECLARAR_BENS]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ST_DECLARAR_BENS" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_PROTOCOLO_CANDIDATURA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_PROTOCOLO_CANDIDATURA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NR_PROCESSO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NR_PROCESSO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_SITUACAO_CANDIDATO_PLEITO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_SITUACAO_CANDIDATO_PLEITO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_SITUACAO_CANDIDATO_PLEITO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_SITUACAO_CANDIDATO_PLEITO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_SITUACAO_CANDIDATO_URNA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_SITUACAO_CANDIDATO_URNA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_SITUACAO_CANDIDATO_URNA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_SITUACAO_CANDIDATO_URNA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[ST_CANDIDATO_INSERIDO_URNA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ST_CANDIDATO_INSERIDO_URNA" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[NM_TIPO_DESTINACAO_VOTOS]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NM_TIPO_DESTINACAO_VOTOS" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[CD_SITUACAO_CANDIDATO_TOT]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CD_SITUACAO_CANDIDATO_TOT" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[DS_SITUACAO_CANDIDATO_TOT]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DS_SITUACAO_CANDIDATO_TOT" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output].ExternalColumns[ST_PREST_CONTAS]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ST_PREST_CONTAS" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO"
+                  componentClassID="Microsoft.Lookup"
+                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+                  name="LKP - TB_CARGO"
+                  usesDispositions="true"
+                  version="6">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement that generates the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[TB_CARGO]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommandParam"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[TB_CARGO]) [refTable]
+where [refTable].[CD_CARGO] = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the type of connection used to access the reference dataset."
+                      name="ConnectionType"
+                      typeConverter="LookupConnectionType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the cache type of the lookup table."
+                      name="CacheType"
+                      typeConverter="CacheType">2</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                      name="NoMatchBehavior"
+                      typeConverter="LookupNoMatchBehavior">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                      name="NoMatchCachePercentage">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                      name="MaxMemoryUsage">25</property>
+                    <property
+                      dataType="System.Int64"
+                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                      name="MaxMemoryUsage64">25</property>
+                    <property
+                      dataType="System.String"
+                      description="Indicates whether to reference metadata in an XML format."
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="CD_CARGO" dataType="DT_STR" length="2000" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="DS_CARGO" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                      name="ParameterMap">#{Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[CD_CARGO]};</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                      name="TreatDuplicateKeysAsError">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[CONN_OLE_DST-TB_CANDIDATO]"
+                      connectionManagerRefId="Package.ConnectionManagers[CONN_OLE_DST-TB_CANDIDATO]"
+                      description="Connection manager used to access lookup data."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Inputs[Lookup Input]"
+                      name="Lookup Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Inputs[Lookup Input].Columns[CD_CARGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CD_CARGO"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[CD_CARGO]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">CD_CARGO</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup Match Output]"
+                      errorOrTruncationOperation="Lookup"
+                      exclusionGroup="1"
+                      name="Lookup Match Output"
+                      synchronousInputId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup No Match Output]"
+                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                      exclusionGroup="1"
+                      name="Lookup No Match Output"
+                      synchronousInputId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Lookup Error Output"
+                      synchronousInputId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Inputs[Lookup Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE_DST-TB_CARGO"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[TB_CARGO]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[CONN_OLE_DST-TB_CANDIDATO]"
+                      connectionManagerRefId="Package.ConnectionManagers[CONN_OLE_DST-TB_CANDIDATO]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input].Columns[CD_CARGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CD_CARGO"
+                          externalMetadataColumnId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[CD_CARGO]"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[CD_CARGO]" />
+                        <inputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input].Columns[DS_CARGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DS_CARGO"
+                          externalMetadataColumnId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[DS_CARGO]"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[DS_CARGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[CD_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="2000"
+                          name="CD_CARGO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[DS_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="DS_CARGO" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE_DST-TMP_TB_CARGO"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[##TMP_TB_CARGO]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[CONN_OLE_DST-tempdb]"
+                      connectionManagerRefId="Package.ConnectionManagers[CONN_OLE_DST-tempdb]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input].Columns[CD_CARGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CD_CARGO"
+                          externalMetadataColumnId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[CD_CARGO]"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[CD_CARGO]" />
+                        <inputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input].Columns[DS_CARGO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DS_CARGO"
+                          externalMetadataColumnId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[DS_CARGO]"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1].Columns[DS_CARGO]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[CD_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="2000"
+                          name="CD_CARGO" />
+                        <externalMetadataColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input].ExternalColumns[DS_CARGO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="DS_CARGO" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Atualizadas"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="RCNT - Qtd LInhas Atualizadas">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::QtdLinhasAtualizadas</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Atualizadas.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Atualizadas.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Atualizadas.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Inseridas"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="RCNT - Qtd LInhas Inseridas">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::QtdLinhasInseridas</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Inseridas.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Inseridas.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Inseridas.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Aggregate Output 1]"
+                  endId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Inputs[Lookup Input]"
+                  name="Aggregate Output 1"
+                  startId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Outputs[Aggregate Output 1]" />
+                <path
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Flat File Source Output]"
+                  endId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores.Inputs[Aggregate Input 1]"
+                  name="Flat File Source Output"
+                  startId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO.Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Lookup Match Output]"
+                  endId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Atualizadas.Inputs[Row Count Input 1]"
+                  name="Lookup Match Output"
+                  startId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Lookup No Match Output]"
+                  endId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Inseridas.Inputs[Row Count Input 1]"
+                  name="Lookup No Match Output"
+                  startId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Row Count Output 1]"
+                  endId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO.Inputs[OLE DB Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Inseridas.Outputs[Row Count Output 1]" />
+                <path
+                  refId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Row Count Output 11]"
+                  endId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO.Inputs[OLE DB Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Atualizadas.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SEQC - Carga TB_CARGO\ESQL - Atualiza TB_CARGO"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{C60FF95A-512B-46BC-9EE7-89433735D98F}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="ESQL - Atualiza TB_CARGO"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{5E30E341-3227-4952-9CEC-208F53F24C12}"
+              SQLTask:SqlStatementSource="UPDATE A&#xA;&#xA;SET A.[DS_CARGO] = B.[DS_CARGO]&#xA;&#xA;FROM [dbo].[TB_CARGO] A&#xA;&#xA;INNER JOIN ##TMP_TB_CARGO B&#xA;&#xA;ON A.CD_CARGO = B.CD_CARGO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SEQC - Carga TB_CARGO\ESQL - Cria TMP_TB_CARGO"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:DelayValidation="True"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4B0BF3C1-DFE0-4BF8-9F13-270BCF7F6BA1}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="ESQL - Cria TMP_TB_CARGO"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{8c9c15b6-6bd9-46fd-9056-54b3e1d6e31e}"
+              SQLTask:SqlStatementSource="IF OBJECT_ID ('tempdb..##TMP_TB_CARGO') IS NOT NULL&#xA;DROP TABLE ##TMP_TB_CARGO&#xA;GO&#xA;&#xA;CREATE TABLE ##TMP_TB_CARGO(&#xA;&#x9;[CD_CARGO] [varchar](2000) NOT NULL,&#xA;&#x9;[DS_CARGO] [varchar](100) NULL&#xA;)&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SEQC - Carga TB_CARGO.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{FD2F92CC-AA6B-412B-9628-AF67EDF41DFC}"
+          DTS:From="Package\SEQC - Carga TB_CARGO\ESQL - Cria TMP_TB_CARGO"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SEQC - Carga TB_CARGO.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{B4669373-FF0D-452C-BF38-D27097F0CB1E}"
+          DTS:From="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\SEQC - Carga TB_CARGO\ESQL - Atualiza TB_CARGO" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{C1F1B320-2778-48B2-894C-9AEDEF6321ED}"
+      DTS:EventID="729863679"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{81D05352-3023-47D0-9B8B-35B7830DF7DC}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\ESQL - Registra Log"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{BFB2AFD6-A9FE-4882-BBD6-602D2C8D9BF8}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="ESQL - Registra Log"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E0519EB6-D79E-4777-B5C8-C90BD495C9E1}"
+              SQLTask:SqlStatementSource="EXECUTE [dbo].[SP_CarregaLogErro] &#xA;   ? &#xA;  ,? &#xA;  ,? &#xA;  ,? &#xA;  ,? &#xA;  ,''" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="System::PackageID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="System::SourceID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="System::SourceName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="System::ErrorCode"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="System::ErrorDescription"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnPostExecute]"
+      DTS:CreationName="OnPostExecute"
+      DTS:DTSID="{17F252A7-B959-41DA-8F2C-4ABBCB56D8BF}"
+      DTS:EventID="0"
+      DTS:EventName="OnPostExecute"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{11530984-A534-4F86-92B5-FF646F9C0A17}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnPostExecute]\ESQL - Registra Log"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{8428C52C-1BFA-47BE-A740-25425187FAC9}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="ESQL - Registra Log"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E0519EB6-D79E-4777-B5C8-C90BD495C9E1}"
+              SQLTask:SqlStatementSource="EXECUTE [dbo].[SP_CarregaLog] &#xA;   ? &#xA;  , ? &#xA;  ,? &#xA;  ,? &#xA;  ,? &#xA;  ,? &#xA;  ,0&#xA;  ,0&#xA;  ,'F'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::Grupo"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="System::PackageID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="System::PackageName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="System::SourceID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="System::SourceName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="5"
+                SQLTask:DtsVariableName="System::SourceDescription"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnPreExecute]"
+      DTS:CreationName="OnPreExecute"
+      DTS:DTSID="{C0602B84-13C9-4CC8-A7B2-4783A89739A0}"
+      DTS:EventID="93872744"
+      DTS:EventName="OnPreExecute"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{9CC8F818-2A9B-4958-BEF0-6190F0CA6FA7}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnPreExecute]\ESQL - Registra Log"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{4C1CDBAF-FC6A-42A4-9336-F139C12AD939}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="ESQL - Registra Log"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{E0519EB6-D79E-4777-B5C8-C90BD495C9E1}"
+              SQLTask:SqlStatementSource="EXECUTE [dbo].[SP_CarregaLog]  &#xA;  ? &#xA; ,? &#xA; ,? &#xA; ,? &#xA; ,? &#xA; ,? &#xA; ,0&#xA; ,0&#xA; ,'I'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::Grupo"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="System::PackageID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="System::PackageName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="System::SourceID"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="System::SourceName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="5"
+                SQLTask:DtsVariableName="System::SourceDescription"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="203,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO"
+          TopLeft="31.5,117.5" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\SEQC - Carga TB_CARGO\ESQL - Atualiza TB_CARGO"
+          TopLeft="55,234" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\SEQC - Carga TB_CARGO\ESQL - Cria TMP_TB_CARGO"
+          TopLeft="9.00000000000001,5.5" />
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO.PrecedenceConstraints[Constraint]"
+          TopLeft="107.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.5,70"
+              Start="0,0"
+              End="25.5,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31"
+                    Point2="0,35"
+                    Point3="4,35" />
+                  <mssgle:LineSegment
+                    End="21.5,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.5,35"
+                    Point2="25.5,35"
+                    Point3="25.5,39" />
+                  <mssgle:LineSegment
+                    End="25.5,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO.PrecedenceConstraints[Constraint 1]"
+          TopLeft="133,159.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.5,74.5"
+              Start="0,0"
+              End="32.5,67">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.25"
+                    Point2="0,37.25"
+                    Point3="4,37.25" />
+                  <mssgle:LineSegment
+                    End="28.5,37.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.5,37.25"
+                    Point2="32.5,37.25"
+                    Point3="32.5,41.25" />
+                  <mssgle:LineSegment
+                    End="32.5,67" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="281,331"
+          Size="281,374"
+          Id="Package\SEQC - Carga TB_CARGO"
+          TopLeft="311.571428571429,127.428571428571" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="180,42"
+          Id="Package.EventHandlers[OnError]\ESQL - Registra Log"
+          TopLeft="289,100" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnPostExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="180,42"
+          Id="Package.EventHandlers[OnPostExecute]\ESQL - Registra Log"
+          TopLeft="171,100" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="180,42"
+          Id="Package.EventHandlers[OnPreExecute]\ESQL - Registra Log"
+          TopLeft="201,120" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <TaskHost
+    design-time-name="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="193,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO"
+          TopLeft="251.5,429.5" />
+        <NodeLayout
+          Size="220,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Inseridas"
+          TopLeft="256.5,327.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO"
+          TopLeft="568.5,225.5" />
+        <NodeLayout
+          Size="220,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\FF_SRC-ARQ_CANDIDATO"
+          TopLeft="543.5,21.5" />
+        <NodeLayout
+          Size="233,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\RCNT - Qtd LInhas Atualizadas"
+          TopLeft="809,325.5" />
+        <NodeLayout
+          Size="225,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\AGR_TRFM - Agrupa Valores"
+          TopLeft="541,123.5" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO"
+          TopLeft="798,419.5" />
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Lookup No Match Output]"
+          TopLeft="626.5,267.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-260,60"
+              Start="0,0"
+              End="-260,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3356643356643" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3356643356643"
+                    Point2="0,24.3356643356643"
+                    Point3="-4,24.3356643356643" />
+                  <mssgle:LineSegment
+                    End="-256,24.3356643356643" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-256,24.3356643356643"
+                    Point2="-260,24.3356643356643"
+                    Point3="-260,28.3356643356643" />
+                  <mssgle:LineSegment
+                    End="-260,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-185.80638671875,29.3356643356643,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Lookup Match Output]"
+          TopLeft="680.5,267.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="245,58"
+              Start="0,0"
+              End="245,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5244755244755" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5244755244755"
+                    Point2="0,23.5244755244755"
+                    Point3="4,23.5244755244755" />
+                  <mssgle:LineSegment
+                    End="241,23.5244755244755" />
+                  <mssgle:CubicBezierSegment
+                    Point1="241,23.5244755244755"
+                    Point2="245,23.5244755244755"
+                    Point3="245,27.5244755244755" />
+                  <mssgle:LineSegment
+                    End="245,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="74.30861328125,28.5244755244755,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Flat File Source Output]"
+          TopLeft="653.5,63.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Aggregate Output 1]"
+          TopLeft="653.5,165.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Row Count Output 11]"
+          TopLeft="925.5,367.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-16.5,52"
+              Start="0,0"
+              End="-16.5,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="-4,26" />
+                  <mssgle:LineSegment
+                    End="-12.5,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-12.5,26"
+                    Point2="-16.5,26"
+                    Point3="-16.5,30" />
+                  <mssgle:LineSegment
+                    End="-16.5,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.Paths[Row Count Output 1]"
+          TopLeft="366.5,369.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.5,60"
+              Start="0,0"
+              End="-18.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-14.5,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.5,30"
+                    Point2="-18.5,30"
+                    Point3="-18.5,34" />
+                  <mssgle:LineSegment
+                    End="-18.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TB_CARGO">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\LKP - TB_CARGO">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[TB_CARGO]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO\OLE_DST-TMP_TB_CARGO">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <DtsEventHandler
+    design-time-name="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.EventHandlers[OnPostExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="180,42"
+          Id="Package\SEQC - Carga TB_CARGO\DFT - Carga TB_CARGO.EventHandlers[OnPostExecute]\ESQL - Registra Log"
+          TopLeft="60,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

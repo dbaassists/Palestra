@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33026.149
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "PRJ_SQLWEEKRECIFE", "PRJ_SQLWEEKRECIFE\PRJ_SQLWEEKRECIFE.dtproj", "{68C0B40F-0AC8-4BC8-B76E-07008C7AE07B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68C0B40F-0AC8-4BC8-B76E-07008C7AE07B}.Development|Default.ActiveCfg = Development
+		{68C0B40F-0AC8-4BC8-B76E-07008C7AE07B}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {176A79E6-E9B2-4809-8C70-EABD4FD4D26E}
+	EndGlobalSection
+EndGlobal
