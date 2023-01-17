@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="PKG_Importacao-Dados-Controlador"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{0AE39960-48C8-477E-A615-B32C2402015E}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{18434020-CC01-49A6-B7BA-AC23A271ADAF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -787,96 +787,115 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\PKG_Importacao-Dados_Candidatura"
-      DTS:CreationName="Microsoft.ExecutePackageTask"
-      DTS:Description="Execute Package Task"
-      DTS:DTSID="{8DB6A461-2BC7-4834-BA94-59BB5AFFCEF1}"
-      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:refId="Package\SEQC - Controlador"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{F63DF69E-0073-4C95-9337-5821D2564A0E}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
-      DTS:ObjectName="PKG_Importacao-Dados_Candidatura"
-      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      DTS:ObjectName="SEQC - Controlador">
       <DTS:Variables />
-      <DTS:ObjectData>
-        <ExecutePackageTask>
-          <Connection>{B00E46CF-92F1-4F44-9672-498E9ECE0032}</Connection>
-        </ExecutePackageTask>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\PKG_Importacao-Dados_Cargo"
-      DTS:CreationName="Microsoft.ExecutePackageTask"
-      DTS:Description="Execute Package Task"
-      DTS:DTSID="{AD42ACE3-B3A6-4BE3-9685-FF2B226C5A30}"
-      DTS:ExecutableType="Microsoft.ExecutePackageTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="PKG_Importacao-Dados_Cargo"
-      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <ExecutePackageTask>
-          <Connection>{A4A29FEC-6FD4-4500-8FD1-8DD171E9933E}</Connection>
-        </ExecutePackageTask>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\PKG_Importacao-Dados_Partido"
-      DTS:CreationName="Microsoft.ExecutePackageTask"
-      DTS:Description="Execute Package Task"
-      DTS:DTSID="{AE1461AA-C745-4422-9F2E-5093FDF9FDD6}"
-      DTS:ExecutableType="Microsoft.ExecutePackageTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="PKG_Importacao-Dados_Partido"
-      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <ExecutePackageTask>
-          <Connection>{4441280A-0AAB-43E7-B017-D4F7C7EC733E}</Connection>
-        </ExecutePackageTask>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\PKG_Importacao-Dados_Situacao_Candidatura"
-      DTS:CreationName="Microsoft.ExecutePackageTask"
-      DTS:Description="Execute Package Task"
-      DTS:DTSID="{DE8C80FD-400F-4446-B27A-449288B21771}"
-      DTS:ExecutableType="Microsoft.ExecutePackageTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="PKG_Importacao-Dados_Situacao_Candidatura"
-      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <ExecutePackageTask>
-          <Connection>{805F73A6-C9AE-4CD9-8EB8-FE11F42B561D}</Connection>
-        </ExecutePackageTask>
-      </DTS:ObjectData>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\SEQC - Controlador\PKG_Importacao-Dados_Candidatura"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:DelayValidation="True"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{8DB6A461-2BC7-4834-BA94-59BB5AFFCEF1}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="PKG_Importacao-Dados_Candidatura"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <Connection>{B00E46CF-92F1-4F44-9672-498E9ECE0032}</Connection>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SEQC - Controlador\PKG_Importacao-Dados_Cargo"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:DelayValidation="True"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{AD42ACE3-B3A6-4BE3-9685-FF2B226C5A30}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="PKG_Importacao-Dados_Cargo"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <Connection>{A4A29FEC-6FD4-4500-8FD1-8DD171E9933E}</Connection>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SEQC - Controlador\PKG_Importacao-Dados_Partido"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:DelayValidation="True"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{AE1461AA-C745-4422-9F2E-5093FDF9FDD6}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="PKG_Importacao-Dados_Partido"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <Connection>{4441280A-0AAB-43E7-B017-D4F7C7EC733E}</Connection>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SEQC - Controlador\PKG_Importacao-Dados_Situacao_Candidatura"
+          DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:DelayValidation="True"
+          DTS:Description="Execute Package Task"
+          DTS:DTSID="{DE8C80FD-400F-4446-B27A-449288B21771}"
+          DTS:ExecutableType="Microsoft.ExecutePackageTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="PKG_Importacao-Dados_Situacao_Candidatura"
+          DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ExecutePackageTask>
+              <Connection>{805F73A6-C9AE-4CD9-8EB8-FE11F42B561D}</Connection>
+            </ExecutePackageTask>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SEQC - Controlador.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{11F798F8-2C87-4273-B7FD-CF3DE20516A2}"
+          DTS:From="Package\SEQC - Controlador\PKG_Importacao-Dados_Cargo"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\SEQC - Controlador\PKG_Importacao-Dados_Candidatura"
+          DTS:Value="2" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SEQC - Controlador.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{491F4F94-A5E8-490B-9450-828BD6BD4F37}"
+          DTS:From="Package\SEQC - Controlador\PKG_Importacao-Dados_Candidatura"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\SEQC - Controlador\PKG_Importacao-Dados_Partido"
+          DTS:Value="2" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SEQC - Controlador.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{C5958AAF-6D9C-4959-AE19-3512B89886A2}"
+          DTS:From="Package\SEQC - Controlador\PKG_Importacao-Dados_Partido"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\SEQC - Controlador\PKG_Importacao-Dados_Situacao_Candidatura"
+          DTS:Value="2" />
+      </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
-  <DTS:PrecedenceConstraints>
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
-      DTS:CreationName=""
-      DTS:DTSID="{11F798F8-2C87-4273-B7FD-CF3DE20516A2}"
-      DTS:From="Package\PKG_Importacao-Dados_Cargo"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
-      DTS:To="Package\PKG_Importacao-Dados_Candidatura" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{491F4F94-A5E8-490B-9450-828BD6BD4F37}"
-      DTS:From="Package\PKG_Importacao-Dados_Candidatura"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\PKG_Importacao-Dados_Partido" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{C5958AAF-6D9C-4959-AE19-3512B89886A2}"
-      DTS:From="Package\PKG_Importacao-Dados_Partido"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 2"
-      DTS:To="Package\PKG_Importacao-Dados_Situacao_Candidatura" />
-  </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
@@ -1109,26 +1128,14 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="235,42"
-          Id="Package\PKG_Importacao-Dados_Cargo"
-          TopLeft="169,112" />
-        <NodeLayout
-          Size="265,42"
-          Id="Package\PKG_Importacao-Dados_Candidatura"
-          TopLeft="171,200" />
-        <NodeLayout
-          Size="240,42"
-          Id="Package\PKG_Importacao-Dados_Partido"
-          TopLeft="169,296" />
-        <NodeLayout
-          Size="314,42"
-          Id="Package\PKG_Importacao-Dados_Situacao_Candidatura"
-          TopLeft="165,400" />
+          Id="Package\SEQC - Controlador\PKG_Importacao-Dados_Cargo"
+          TopLeft="19,5.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="286.5,154">
+          Id="Package\SEQC - Controlador.PrecedenceConstraints[Constraint]"
+          TopLeft="136.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1157,12 +1164,18 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-16.804453125,28,50.60890625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="265,42"
+          Id="Package\SEQC - Controlador\PKG_Importacao-Dados_Candidatura"
+          TopLeft="21,93.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="303.5,242">
+          Id="Package\SEQC - Controlador.PrecedenceConstraints[Constraint 1]"
+          TopLeft="153.5,135.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1191,12 +1204,18 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-32.554453125,32,50.60890625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="240,42"
+          Id="Package\SEQC - Controlador\PKG_Importacao-Dados_Partido"
+          TopLeft="19,189.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="289,338">
+          Id="Package\SEQC - Controlador.PrecedenceConstraints[Constraint 2]"
+          TopLeft="139,231.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1225,9 +1244,22 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-8.804453125,36,50.60890625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="314,42"
+          Id="Package\SEQC - Controlador\PKG_Importacao-Dados_Situacao_Candidatura"
+          TopLeft="15,293.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="334,390"
+          Size="334,433"
+          Id="Package\SEQC - Controlador"
+          TopLeft="748,106" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
