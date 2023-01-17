@@ -1,0 +1,76 @@
+IdPacote
+IdTarefa
+NomeTarefa
+LinhaRegistro
+ErroDescription
+NumErro
+
+System::TaskID 
+System::TaskName
+System::PackageID
+
+
+/* Microsoft SQL Server Integration Services Script Component
+*  Write scripts using Microsoft Visual C# 2008.
+*  ScriptMain is the entry point class of the script.*/
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+using System.Text;
+using System.Data.OleDb;
+
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Declaracao Variaveis
+
+    private string linhaRegistro = string.Empty;
+    private string comandoSql;
+
+    #endregion
+
+
+    public override void PreExecute()
+    {
+        base.PreExecute();
+    }
+
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+          Add your code here for postprocessing or remove if not needed
+          You can set read/write variables here, for example:
+          Variables.MyIntVar = 100
+        */
+    }
+
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        Row.IdPacote = Variables.PackageID;
+        Row.IdTarefa = Variables.TaskID;
+        Row.NomeTarefa = Variables.TaskName;
+        Row.ErroDescription = "Registro nao encontrado - Componente: " + this.ComponentMetaData.Name;
+
+        Row.NumErro = 0;
+
+        try
+        {
+            //Inicio - Codificacao Alterada por tipo de saida de erro
+            linhaRegistro = (
+                       string.Concat(
+                          "MATERIAL:" + Convert.ToString(Row.MATERIAL),";"
+               )
+                );
+            //Fim    - Codificacao Alterada por tipo de saida de erro
+        }
+        catch
+        {
+            linhaRegistro = "";
+        }
+        Row.LinhaRegistro = linhaRegistro.ToString();
+    }
+
+}
