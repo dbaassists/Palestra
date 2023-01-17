@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2023-01-17T11:02:04.287Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="S4Cfde69K5FbqvoTQS-r" version="20.8.3" type="github">
+  <diagram name="Page-1" id="c7558073-3199-34d8-9f00-42111426c3f3">
+    <mxGraphModel dx="677" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="826" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iyPb0N3byPzZvULkwc2K-110" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;fillWeight=4;hachureGap=8;hachureAngle=45;jiggle=1;curveFitting=0.95;strokeColor=#666666;strokeWidth=4;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="325" y="80" width="440" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-101" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=1;strokeWidth=4;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="408" y="227" width="268" height="268" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-96" value="" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=none;sketch=1;curveFitting=0.95;jiggle=1;fillColor=#00FFFF;strokeWidth=4;opacity=70;shadow=0;glass=0;fillWeight=4;hachureGap=8;hachureAngle=45;" parent="1" vertex="1">
+          <mxGeometry x="483" y="277" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-97" value="" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=0.95;jiggle=1;glass=0;fillColor=#66FFB3;strokeWidth=4;fillWeight=4;hachureGap=8;hachureAngle=45;" parent="1" vertex="1">
+          <mxGeometry x="483" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-98" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="iyPb0N3byPzZvULkwc2K-96" target="iyPb0N3byPzZvULkwc2K-97" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="498" y="298" as="sourcePoint" />
+            <mxPoint x="538" y="318" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-99" value="Arquivo Candidato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="483" y="247" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-100" value="Tabela Candidato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="483" y="465" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.47;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="iyPb0N3byPzZvULkwc2K-102" target="iyPb0N3byPzZvULkwc2K-101" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-102" value="" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=none;sketch=1;curveFitting=0.95;jiggle=1;fillColor=#B57F48;strokeWidth=4;opacity=70;shadow=0;glass=0;fillWeight=4;hachureGap=8;hachureAngle=45;" parent="1" vertex="1">
+          <mxGeometry x="473" y="117" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-106" value="Limpa Tabela Candidato" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="537" y="177" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-109" value="FLUXO DE CARGA 01" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=default;strokeWidth=2;fontSize=17;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="445" y="40" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-112" value="Icon" style="icon;html=1;image=img/clipart/Gear_128x128.png;rounded=1;fillWeight=4;hachureGap=8;hachureAngle=45;strokeColor=#666666;strokeWidth=4;fillColor=#66FFB3;opacity=70;sketch=1;curveFitting=1;jiggle=2;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="310" y="60" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iyPb0N3byPzZvULkwc2K-116" value="Descrição do Fluxo: &lt;br&gt;&lt;br&gt;1 - Limpar os Dados&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;da tabela TB_Candidato;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;2 - Ler Arquivo CSV;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;3 - Carregar Arquivo CSV &lt;br&gt;para o SQL Server" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=#CCFFE6;strokeWidth=4;fontSize=17;fontStyle=1;labelBorderColor=none;labelBackgroundColor=#CCFFE6;sketch=1;curveFitting=1;jiggle=2;rounded=1;gradientColor=#167E35;" parent="1" vertex="1">
+          <mxGeometry x="40" y="150" width="230" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
